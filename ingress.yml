@@ -9,10 +9,10 @@ spec:
   rules:
   - http:
       paths:
-      - path: /nginx
+      - path: /todo
         pathType: Prefix
         backend:
           service:
-           name: nginx-service
+           name: todo-service
            port:
-            number: 80
+            number: 8000
